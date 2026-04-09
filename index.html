@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Git Conflict Resolver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI-Based Git Conflict Resolution System</h1>
+
+    <div class="code-section">
+        <div>
+            <h2>Developer A Code</h2>
+            <textarea id="codeA"></textarea>
+        </div>
+
+        <div>
+            <h2>Developer B Code</h2>
+            <textarea id="codeB"></textarea>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="detectConflict()">Detect Conflict</button>
+        <button onclick="resolveConflict('A')">Keep A</button>
+        <button onclick="resolveConflict('B')">Keep B</button>
+        <button onclick="resolveConflict('AI')">Auto Resolve (AI)</button>
+    </div>
+
+    <div class="output">
+        <h2>Result</h2>
+        <pre id="result"></pre>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
